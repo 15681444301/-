@@ -83,27 +83,31 @@ export default {
 
     //登录
     login() {
-      this.$axios
-        .post("http://localhost:5000/api/v1/login", this.loginfrom)
-        .then((res) => {
-          console.log(res);
-          if (res.data.code == 1) {
-            this.$router.push("/Detail");
-            this.$message({
-              message: res.data.msg,
-              type: "success",
-            });
-          } else {
-            this.$message({
-              message: res.data.msg,
-              type: "warning",
-            });
-          }
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      this.$refs.loginref.validate((valid) => {
+        if (!valid) return;
+        this.$axios
+          .post("http://localhost:5000/api/v1/login", this.loginfrom)
+          .then((res) => {
+            console.log(res);
+            if (res.data.code == 1) {
+              this.$router.push("/Home");
+              this.$message({
+                message: res.data.msg,
+                type: "success",
+              });
+            } else {
+              this.$message({
+                message: res.data.msg,
+                type: "warning",
+              });
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      });
     },
+
     // 前往注册页面
     goRegister() {
       this.$router.push("/register");
