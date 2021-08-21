@@ -41,20 +41,20 @@
     <div class="foot">
       <div class="footer">
         <div class="foot-list">
-          <span>人才战略</span>
-          <span>客户服务</span>
-          <span>商务合作</span>
-          <span>关注我们</span>
+          <a><span>人才战略</span></a>
+          <a><span>客户服务</span></a>
+          <a><span>客户服务</span></a>
+          <a><span>客户服务</span></a>
         </div>
         <div class="foot-list-two">
-          <a>员工风采</a>
-          <a>联系我们</a>
-          <a>团购业务</a>
+          <a><span>员工风采</span></a>
+          <a><span>联系我们</span></a>
+          <a><span>团购业务</span></a>
         </div>
         <div class="foot-list-three">
-          <a>人才招聘</a>
-          <a>防伪查询</a>
-          <a>加盟信息</a>
+          <a><span>人才招聘</span></a>
+          <a><span>防伪查询</span></a>
+          <a><span>加盟信息</span></a>
         </div>
       </div>
     </div>
@@ -137,13 +137,13 @@ export default {
     padding-top: 50px;
     .foot-list {
       margin-left: 100px;
-      span {
+      a {
         margin-left: 50px;
         font-size: 14px;
         font-weight: bold;
         color: #999999;
       }
-      span:nth-child(4) {
+      a:nth-child(4) {
         margin-left: 600px;
       }
     }

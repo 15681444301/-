@@ -12,6 +12,7 @@
     </div>
     <div class="header-item">
       <input type="text" placeholder="搜索" />
+      <img src="../assets/img/放大镜.png" alt="" />
     </div>
   </div>
 </template>
@@ -63,6 +64,7 @@ export default {
     line-height: 60px;
     text-align: center;
     margin-left: 50px;
+    position: relative;
     input {
       margin-left: 50px;
       border: 1px solid #3b3b3b;
@@ -71,6 +73,12 @@ export default {
       color: #fff;
       outline: none;
       width: 200px;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-50%, 150%);
     }
   }
 }
