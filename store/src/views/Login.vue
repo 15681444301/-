@@ -3,7 +3,7 @@
     <div class="bg"><img src="../assets/img/bg.jpg" alt="" /></div>
     <Header></Header>
     <div class="login_container-head">
-      —————————————————————— 登录 ————————————————————————
+      —————————————————— 登录 —————————————————
     </div>
 
     <div class="login-mid">
